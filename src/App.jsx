@@ -1,9 +1,9 @@
 import "./App.scss";
-import Navbar from "./component/Navbar";
-
+import NavBar from "./component/NavBar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import About from "./component/page/about";
-import Service from "./component/page/service";
+import Features from "./component/page/features";
+import Team from "./component/page/team";
+import SignIn from "./component/page/signin";
 import Home from "./component/page/home";
 
 function App() {
@@ -11,11 +11,12 @@ function App() {
     <>
       <BrowserRouter>
         <div className="app">
-          <Navbar />
+          <NavBar />
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
-            <Route exact path="/about" element={<About />}></Route>
-            <Route exact path="/service" element={<Service />}></Route>
+            <Route exact path="/features" element={<Features />}></Route>
+            <Route exact path="/team" element={<Team />}></Route>
+            <Route exact path="/signin" element={<SignIn />}></Route>
           </Routes>
         </div>
       </BrowserRouter>

@@ -4,45 +4,13 @@
   box-sizing: border-box;
 }
 
-nav {
-  padding: 0 120px;
-  height: 3rem;
-  background-color: lightblue;
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  .side-title {
-    color: red;
-  }
-  ul {
-    display: flex;
-    li {
-      list-style: none;
-      .link {
-        color: red;
-
-        margin-left: 20px;
-      }
-    }
-  }
-  .toggle-button {
-    display: none;
-    cursor: pointer;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  nav {
-    padding: 0 20px;
-    .toggle-button {
-      display: block;
-    }
-    ul {
-      flex-direction: column;
-      display: none;
-    }
-    .nav-link.show {
-      display: flex;
-    }
-  }
+$back: linear-gradient(
+  90deg,
+  rgba(29, 181, 240, 1) 0%,
+  rgba(33, 217, 238, 1) 12%,
+  rgba(154, 161, 198, 1) 38%,
+  rgba(255, 0, 91, 1) 100%
+);
+.logo {
+  width: 100px;
 }
