@@ -11,6 +11,9 @@ $back: linear-gradient(
   rgba(154, 161, 198, 1) 38%,
   rgba(255, 0, 91, 1) 100%
 );
-.logo {
-  width: 100px;
+.header {
+  .logo {
+    width: 100px;
+  }
+  font-family: "Raleway", sans-serif;
 }

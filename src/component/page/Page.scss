@@ -1,11 +1,13 @@
-.hero {
-  width: 100%;
+html {
+  background-color: rgb(241, 237, 237);
 }
 
 .left {
   h2 {
     margin-top: 80px;
     font-size: 39px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
   }
 }
 .right {
@@ -14,7 +16,45 @@
     margin-top: 80px;
   }
 }
-Form {
+.one {
+  h2 {
+    font-family: "Raleway", sans-serif;
+  }
+  a {
+    color: rgb(29, 135, 161);
+    padding-bottom: 3px;
+    border-bottom: 2px solid rgb(29, 135, 161);
+  }
+  .quotes {
+    border-radius: 20px;
+    background: white;
+    width: 65%;
+    padding: 30px;
+    blockquote {
+      line-height: 30px;
+    }
+    .avatar {
+      display: flex;
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+      .id {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.two {
+  .hero {
+    width: 100%;
+  }
+}
+
+// form
+.log-up {
   display: flex;
   justify-content: flex-start;
   .email {
@@ -30,5 +70,84 @@ Form {
     height: 3rem;
     color: white;
     border-radius: 5px;
+  }
+}
+
+.section-2 {
+  h2 {
+    font-family: "Raleway", sans-serif;
+  }
+  background-color: hsl(238, 22%, 44%);
+  padding: 50px 0;
+  color: white;
+  .log-btn {
+    display: flex;
+    flex-direction: column;
+    .email {
+      height: 3rem;
+      width: 100%;
+      padding-left: 20px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 5px 30px;
+      background-color: blue;
+      width: 250px;
+      height: 3rem;
+      color: white;
+      border-radius: 5px;
+    }
+  }
+}
+
+// footer
+footer {
+  background-color: hsl(243, 87%, 12%);
+  color: white;
+  .foot-logo {
+    color: #fff;
+  }
+  ul {
+    list-style: none;
+    li {
+      a {
+        color: white;
+      }
+    }
+  }
+  .social ul {
+    display: flex;
+    li {
+      margin: 0 20px;
+      border: 1px solid white;
+      border-radius: 50%;
+      a {
+        padding: 50px 6px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .left {
+    h2 {
+      margin-top: 10px;
+      font-size: 29px;
+    }
+  }
+  .right {
+    .hero {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  form {
+    flex-direction: column;
+    .email {
+      width: 100%;
+    }
+    button {
+      width: 100%;
+      margin: 20px 0;
+    }
   }
 }
